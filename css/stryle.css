@@ -23,3 +23,47 @@
 html{
     scroll-behavior:smooth;
 }
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+    color:var(--text);
+
+    background:linear-gradient(
+        135deg,
+        #0F172A,
+        #1E3A8A,
+        #2563EB,
+        #14B8A6
+    );
+
+    background-size:400% 400%;
+
+    animation:bgMove 15s ease infinite;
+
+    min-height:100vh;
+
+}
+@keyframes bgMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
