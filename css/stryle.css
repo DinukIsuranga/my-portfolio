@@ -101,3 +101,98 @@ body{
     color: #ffffff !important;
 
 }
+
+/* Menu */
+
+.nav-link{
+
+    color: white !important;
+
+    font-weight: 500;
+
+    margin-left: 20px;
+
+    position: relative;
+
+    transition: .3s;
+
+}
+
+/* Hover */
+
+.nav-link:hover{
+
+    color: #38BDF8 !important;
+
+}
+
+/* Animated Underline */
+
+.nav-link::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+
+    height: 2px;
+
+    background: #38BDF8;
+
+    transition: .4s;
+
+}
+
+.nav-link:hover::after{
+
+    width: 100%;
+
+}
+
+/* Active Link */
+
+.nav-link.active{
+
+    color: #38BDF8 !important;
+
+}
+
+.nav-link.active::after{
+
+    width: 100%;
+
+}
+
+/* Mobile Toggle */
+
+.navbar-toggler{
+
+    border: none;
+
+    box-shadow: none !important;
+
+}
+
+/* Dark Glass Menu */
+
+@media(max-width:991px){
+
+    .navbar-collapse{
+
+        margin-top:15px;
+
+        padding:20px;
+
+        border-radius:15px;
+
+        background:rgba(15,23,42,.85);
+
+        backdrop-filter:blur(20px);
+
+    }
+
+}
