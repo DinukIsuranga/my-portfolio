@@ -196,3 +196,168 @@ body{
     }
 
 }
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+
+    background:transparent;
+
+    color:white;
+}
+.hero h1{
+    font-size:4rem;
+    font-weight:700;
+}
+
+.hero h3{
+    color:#93c5fd;
+    margin-top:15px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    margin:25px 0;
+}
+
+.profile-img{
+    width:380px;
+    border-radius:50%;
+    border:8px solid rgba(255,255,255,.15);
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    transition:.5s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
+.social-icons a{
+    color:white;
+    font-size:28px;
+    margin-right:18px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#38bdf8;
+    transform:translateY(-5px);
+}
+
+/*Buttons*/
+
+.btn-primary{
+    background:var(--primary);
+    border:none;
+    padding:12px 30px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow);
+}
+
+.btn-outline-light{
+    margin-left:15px;
+    border-radius:40px;
+    padding:12px 30px;
+}
+
+/*About*/
+
+#about p{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* Education*/
+
+#education .card{
+    border:none;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:.4s;
+}
+
+#education .card:hover{
+    transform:translateY(-8px);
+}
+
+/*Skills*/
+
+.skill-card{
+
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    margin-bottom:30px;
+    transition:.4s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.skill-card i{
+
+    font-size:55px;
+    color:var(--primary);
+    margin-bottom:20px;
+
+}
+
+.skill-card h5{
+
+    font-weight:600;
+
+}
+
+/*Projects*/
+
+.project-card{
+
+    border:none;
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    transition:.4s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.project-card img{
+
+    height:220px;
+    object-fit:cover;
+
+}
+
+.project-card .card-body{
+
+    padding:25px;
+
+}
+
+.project-card h4{
+
+    color:var(--dark);
+
+}
