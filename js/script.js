@@ -273,3 +273,45 @@ setInterval(() => {
         `translateY(${position}px)`;
 
 }, 1800);
+
+// Console Message
+
+console.log("Portfolio Loaded Successfully!");
+
+// Dark / Light Mode
+
+const themeButton = document.getElementById("theme-toggle");
+
+const savedTheme = localStorage.getItem("theme");
+
+if(savedTheme === "dark"){
+
+    document.body.classList.add("dark-mode");
+
+    themeButton.innerHTML =
+    "<i class='fas fa-sun'></i>";
+
+}
+
+themeButton.addEventListener("click",function(){
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        themeButton.innerHTML =
+        "<i class='fas fa-sun'></i>";
+
+        localStorage.setItem("theme","dark");
+
+    }
+    else{
+
+        themeButton.innerHTML =
+        "<i class='fas fa-moon'></i>";
+
+        localStorage.setItem("theme","light");
+
+    }
+
+});

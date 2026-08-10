@@ -361,3 +361,52 @@ body{
     color:var(--dark);
 
 }
+/* Timeline */
+
+.timeline{
+
+    border-left:5px solid var(--primary);
+    margin-left:30px;
+    padding-left:30px;
+
+}
+
+.timeline-item{
+
+    background:white;
+    padding:20px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+
+}
+
+.timeline-item h4{
+
+    color:var(--primary);
+
+}
+
+/*  Contact */
+
+form{
+
+    max-width:700px;
+    margin:auto;
+
+}
+
+.form-control{
+
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #ddd;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+    border-color:var(--primary);
+
+}
