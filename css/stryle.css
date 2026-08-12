@@ -410,3 +410,412 @@ form{
     border-color:var(--primary);
 
 }
+
+/*Animation */
+
+.skill-card,
+.project-card,
+.timeline-item,
+.card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+
+    text-align:center;
+    padding-top:120px;
+
+}
+
+.profile-img{
+
+    width:280px;
+    margin-top:50px;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.section-title{
+
+    font-size:2rem;
+
+}
+
+.hero h1{
+
+    font-size:2.5rem;
+
+}
+
+.hero h3{
+
+    font-size:1.4rem;
+
+}
+
+.profile-img{
+
+    width:220px;
+
+}
+
+.btn{
+
+    width:100%;
+    margin-top:10px;
+
+}
+
+.btn-outline-light{
+
+    margin-left:0;
+
+}
+
+.nav-link{
+
+    margin-left:0;
+    padding:10px;
+
+}
+
+}
+
+body.dark-mode{
+
+    background:linear-gradient(
+        135deg,
+        #020617,
+        #0F172A,
+        #1E293B,
+        #334155
+    );
+
+    color:white;
+
+}
+
+body.dark-mode .navbar{
+
+    background:rgba(2,6,23,.75)!important;
+
+}
+
+body.dark-mode .card,
+body.dark-mode .project-card,
+body.dark-mode .timeline-item,
+body.dark-mode .skill-card{
+
+    background:rgba(15,23,42,.75);
+
+    color:white;
+
+}
+
+body.dark-mode .form-control{
+
+    background:rgba(15,23,42,.6);
+
+    color:white;
+
+}
+
+body.dark-mode footer{
+
+    background:#020617;
+}
+.section-title,
+#about p,
+.timeline-item p,
+/*.card p,*/
+/*.card h4,*/
+.skill-info{
+
+    color:white;
+
+}
+/*Skills Progress Bar*/
+
+.skill{
+
+    margin-bottom:30px;
+
+}
+
+.skill-info{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.progress{
+
+    height:12px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#dbeafe;
+
+}
+
+.progress-bar{
+
+    width:0%;
+    height:100%;
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #2563EB,
+        #14B8A6
+    );
+
+    transition:width 2s ease;
+
+}
+
+body.dark-mode .progress{
+
+    background:#334155;
+
+}
+
+/* Dark Mode - Project Cards */
+
+body.dark-mode .project-card h4,
+body.dark-mode .project-card h5,
+body.dark-mode .project-card p{
+
+    color: #ffffff !important;
+
+}
+
+body.dark-mode .project-card .btn{
+
+    color: white;
+
+}
+
+/* 
+   Dark Mode - Contact Form */
+
+body.dark-mode .form-control{
+
+    background: #334155;
+
+    color: #ffffff;
+
+    border: 1px solid #475569;
+
+}
+body.dark-mode .form-control::placeholder{
+
+    color: #cbd5e1;
+
+    opacity: 1;
+
+}
+
+
+/* Light Mode */
+.timeline-item{
+
+    background: #ffffff;
+    color: #334155;
+
+}
+
+.timeline-item h4{
+
+    color: #2563EB;
+
+}
+
+.timeline-item p{
+
+    color: #475569;
+
+}
+
+/* Dark Mode */
+body.dark-mode .timeline-item{
+
+    background: #1E293B;
+    color: #ffffff;
+
+}
+
+body.dark-mode .timeline-item h4{
+
+    color: #60A5FA;
+
+}
+
+body.dark-mode .timeline-item p{
+
+    color: #CBD5E1;
+
+}
+/*MOBILE RESPONSIVE DESIGN */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    .hero {
+        min-height: auto;
+        padding: 140px 0 80px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .profile-img {
+        width: 280px;
+        max-width: 80%;
+        margin-top: 40px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .hero {
+        padding: 120px 20px 70px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero h3 {
+        font-size: 1.25rem;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .profile-img {
+        width: 220px;
+        max-width: 70%;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+        margin-right: 12px;
+    }
+
+    .project-card {
+        margin-bottom: 25px;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+    .timeline {
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+
+    .timeline-item {
+        padding: 18px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h3 {
+        font-size: 1.1rem;
+    }
+
+    .profile-img {
+        width: 190px;
+    }
+
+    .hero .btn {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .btn-outline-light {
+        margin-left: 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+}

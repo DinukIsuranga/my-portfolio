@@ -315,3 +315,55 @@ themeButton.addEventListener("click",function(){
     }
 
 });
+
+//Animated Skills Progress Bars
+
+const skillSection = document.querySelector("#skills");
+
+const bars = document.querySelectorAll(".progress-bar");
+
+let skillAnimated = false;
+
+window.addEventListener("scroll", () => {
+
+    const sectionTop = skillSection.offsetTop - 300;
+
+    if (window.scrollY > sectionTop && !skillAnimated) {
+
+        bars.forEach(bar => {
+
+            let width = bar.getAttribute("data-width");
+
+            bar.style.width = width + "%";
+
+        });
+
+        skillAnimated = true;
+    }
+
+});
+
+// Glass Navbar Scroll Effect
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 80){
+
+        navbar.style.background = "rgba(15,23,42,0.75)";
+        navbar.style.backdropFilter = "blur(25px)";
+        navbar.style.boxShadow = "0 10px 30px rgba(0,0,0,.35)";
+        navbar.style.padding = "10px 0";
+
+    }
+    else{
+
+        navbar.style.background = "rgba(255,255,255,0.08)";
+        navbar.style.backdropFilter = "blur(20px)";
+        navbar.style.boxShadow = "0 8px 32px rgba(0,0,0,.20)";
+        navbar.style.padding = "15px 0";
+
+    }
+
+});
