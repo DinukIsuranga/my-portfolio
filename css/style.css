@@ -23,6 +23,7 @@
 html{
     scroll-behavior:smooth;
 }
+
 body{
 
     font-family:'Poppins',sans-serif;
@@ -67,7 +68,32 @@ body{
     }
 
 }
- /*   Glass Navbar  */
+.section-padding{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight:700;
+    color:var(--dark);
+    margin-bottom:60px;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:var(--primary);
+    display:block;
+    margin:15px auto;
+    border-radius:5px;
+}
+
+    /*   Glass Navbar  */
+
+
 .navbar{
 
     position: fixed;
@@ -91,6 +117,7 @@ body{
     transition: .4s;
 
 }
+
 /* Logo */
 
 .navbar-brand{
@@ -196,6 +223,8 @@ body{
     }
 
 }
+
+
 /* Hero */
 
 .hero{
@@ -361,6 +390,7 @@ body{
     color:var(--dark);
 
 }
+
 /* Timeline */
 
 .timeline{
@@ -408,6 +438,15 @@ form{
 
     box-shadow:none;
     border-color:var(--primary);
+
+}
+
+/* Footer */
+
+footer{
+
+    background:var(--dark);
+    color:white;
 
 }
 

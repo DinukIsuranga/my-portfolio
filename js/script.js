@@ -1,3 +1,4 @@
+
 // Typing Animation
 
 
@@ -77,6 +78,7 @@ window.addEventListener("scroll", function () {
 
 });
 
+
 // Active Navigation
 
 const sections = document.querySelectorAll("section");
@@ -111,6 +113,8 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
 // Scroll To Top Button
 
 
@@ -273,6 +277,7 @@ setInterval(() => {
         `translateY(${position}px)`;
 
 }, 1800);
+
 
 // Console Message
 
