@@ -239,27 +239,27 @@ This allows changes to the portfolio to be tracked and stored in the GitHub repo
 
 ### Home Page
 
-![Home Page](images/home-screenshot.png)
+<img width="947" height="439" alt="image" src="https://github.com/user-attachments/assets/845a69cc-4a77-4c9a-a8bf-55c36292e4ed" />
+
 
 ### About & Education
 
-![About Page](images/about-screenshot.png)
+<img width="946" height="434" alt="image" src="https://github.com/user-attachments/assets/08eb11cd-445c-43e6-9635-ca10a475aafa" />
+
 
 ### Skills
 
-![Skills Page](images/skills-screenshot.png)
+<img width="946" height="440" alt="image" src="https://github.com/user-attachments/assets/d4828f58-e929-4ef3-be97-ce7f53b528c0" />
 
 ### Projects
 
-![Projects Page](images/projects-screenshot.png)
+<img width="948" height="438" alt="image" src="https://github.com/user-attachments/assets/9577274a-9e95-4440-b331-68b1a35fedf8" />
+
 
 ### Contact
 
-![Contact Page](images/contact-screenshot.png)
+<img width="947" height="437" alt="image" src="https://github.com/user-attachments/assets/bcaab08b-0c0b-4941-a236-3e580ae68be5" />
 
-> Replace the screenshot filenames above with your actual screenshot files.
-
----
 
 ## 🔗 Links
 
